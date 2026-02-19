@@ -11,3 +11,4 @@ git config global
 ```
 
 ## configurando o git hub 
+ coloquei informações sobre o git para salvar e subir no site tive pequanas difulcades.
