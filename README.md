@@ -9,3 +9,5 @@ Para utilizar o git na minha maquina eu preciso configurar deterrminado comandos
 ```bash
 git config global 
 ```
+
+## configurando o git hub 
