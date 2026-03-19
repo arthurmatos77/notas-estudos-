@@ -5,70 +5,93 @@ markdawn
 ## Configurando git 
 
 
-Para utilizar o git na minha maquina eu preciso configurar deterrminado comandos,sendo eles 
+ormatação 👇
+
+# 📘 Guia Básico de Git e JavaScript
+
+## 🔧 Configurando o Git
+
+Para utilizar o Git na sua máquina, é necessário configurar:
 
 ```bash
-git config global 
-```
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@email.com"
+🌐 Configurando o GitHub
 
-## configurando o git hub 
- coloquei informações sobre o git para salvar e subir no site tive pequanas difulcades.
+Ao configurar o GitHub para salvar e subir arquivos, podem surgir pequenas dificuldades no início.
 
- ### OQUE É GIT ?
-  ferramenta para atividades on line , que salva o estado de cada arquivo na hora e caso o arquivo não sofra a alterações  ele cria um link simbólico para o arquivo não editado
+❓ O que é Git?
 
+O Git é uma ferramenta de controle de versão que:
 
-exemplos para consulta na prova 
-   // function
-// getElementById 
-// addEventlistners
+Salva o estado dos arquivos
 
+Registra alterações no código
 
+Permite voltar para versões anteriores
+
+Se o arquivo não for alterado, o Git não duplica ele, apenas cria uma referência.
+
+💡 Exemplos importantes (prova)
+// Funções importantes
+// getElementById
+// addEventListener
+🧪 Exemplo prático
 // ----------- Questão 1 ------------//
-function questao1 ()  {
-// escrever o enunciado aqui
-// some os 2 numeros
-const numero = Number(prompt("DIGITE UM NÚMERO:"))
-const numero2 = Number(prompt("DIGITE OUTRO NÚMERO:"))
-alert(numero+numero2)
+function questao1() {
+  // Somar dois números
+  const numero = Number(prompt("DIGITE UM NÚMERO:"))
+  const numero2 = Number(prompt("DIGITE OUTRO NÚMERO:"))
+  alert(numero + numero2)
 }
 
 const buttonquestao1 = document.getElementById("questao1")
-buttonquestao1.addEventListener('click' , () => { questao1() })
 
-como criar um repositorio 
+buttonquestao1.addEventListener('click', () => {
+  questao1()
+})
+📁 Como criar um repositório
 
-primeiro passo ir no git repositorios 
+Acesse o GitHub
 
-aperta na tecla verde escrita 'new repositores'
-apos criar vai ser encamnhado para outra aba 
-apos isso coloque a opçao ssh para nao dar erro 
-depois abra o git bash e coloque cd document/
-depois coloque git clone e o nome do repositorio 
-com botão direito clique e aperte em paste 
-e escreva cd " nome do repositorio" se aparecer main esta certo 
-entre no vs code 
-clique ctrl k o 
-depois pesquise o repositorio 
-quando achar abra ele clicando apenas uma vez para abrir no seu vs code 
-depois coloque index.html e script para fazer as questões 
-depois coloque ponto de !
+Vá em repositórios
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Avaliação </h2>
+Clique em New repository
 
-    <button id="questao1" >Questão 1</button>
-    <button id="questao2" >Questão 2</button>
+Após criar, você será redirecionado
 
-    <script src="./scripts/avaliacao.js"></script>
-</body>
-</html>
+Escolha a opção SSH
+
+💻 Clonando o repositório
+
+Abra o Git Bash:
+
+cd Documents/
+git clone <link-do-repositorio>
+cd nome-do-repositorio
+
+Se aparecer a branch main, está correto.
+
+🧑‍💻 Abrindo no VS Code
+
+Abra o VS Code
+
+Pressione Ctrl + K + Ctrl + O
+
+Procure o repositório
+
+Clique para abrir
+
+📝 Criando arquivos
+
+Criar index.html
+
+Criar script.js
+
+Digitar ! + Enter no HTML para gerar estrutura básica
 
 
+---
+
+✅ Agora pode copiar direto — vai ficar certinho no VS Code  
+Se quiser, posso te mandar versão **mais resumida pra prova** ou **com cores
