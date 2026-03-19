@@ -94,4 +94,198 @@ Digitar ! + Enter no HTML para gerar estrutura básica
 ---
 
 ✅ Agora pode copiar direto — vai ficar certinho no VS Code  
-Se quiser, posso te mandar versão **mais resumida pra prova** ou **com cores
+Se quiser, posso te mandar versão **mais resumida pra prova** ou **com cores 
+
+forma 2 de criar repositorio 
+primeiro entre no git , repositorio copiar a chave ssh 
+criar pasta
+botao direito na pasta 
+clicar em mostrar mais
+selecionar OPEN GITBASH HERE
+dá git clone <link do repositorio> 
+
+// ===============================
+// 01 - Soma de dois números
+// ===============================
+{
+  const n1 = Number(prompt("Número 1:"))
+  const n2 = Number(prompt("Número 2:"))
+  alert("Soma: " + (n1 + n2))
+}
+
+// ===============================
+// 02 - Salário mensal
+// ===============================
+{
+  const valorHora = Number(prompt("Valor por hora:"))
+  const horas = Number(prompt("Horas trabalhadas:"))
+  alert("Salário: " + (valorHora * horas))
+}
+
+// ===============================
+// 03 - Média de 5 pesos
+// ===============================
+{
+  const p1 = Number(prompt("Peso 1:"))
+  const p2 = Number(prompt("Peso 2:"))
+  const p3 = Number(prompt("Peso 3:"))
+  const p4 = Number(prompt("Peso 4:"))
+  const p5 = Number(prompt("Peso 5:"))
+
+  const media = (p1 + p2 + p3 + p4 + p5) / 5
+  alert("Média: " + media)
+}
+
+// ===============================
+// 04 - Celsius → Fahrenheit
+// ===============================
+{
+  const c = Number(prompt("Celsius:"))
+  const f = c * 1.8 + 32
+  alert("Fahrenheit: " + f)
+}
+
+// ===============================
+// 05 - Milhas → Km
+// ===============================
+{
+  const milhas = Number(prompt("Milhas:"))
+  const km = milhas * 1.60934
+  alert("Km: " + km)
+}
+
+// ===============================
+// 06 - Segundos → h:m:s
+// ===============================
+{
+  const total = Number(prompt("Segundos:"))
+
+  const h = parseInt(total / 3600)
+  const resto = total % 3600
+  const m = parseInt(resto / 60)
+  const s = resto % 60
+
+  alert(h + "h " + m + "m " + s + "s")
+}
+
+// ===============================
+// 07 - Km → m e cm
+// ===============================
+{
+  const km = Number(prompt("Km:"))
+  const m = km * 1000
+  const cm = km * 100000
+
+  alert(m + " m e " + cm + " cm")
+}
+
+// ===============================
+// 08 - Tabuada
+// ===============================
+{
+  const n = Number(prompt("Número:"))
+  let resultado = ""
+
+  for (let i = 0; i <= 10; i++) {
+    resultado += n + " x " + i + " = " + (n * i) + "\n"
+  }
+
+  alert(resultado)
+}
+
+// ===============================
+// 09 - Peso ideal
+// ===============================
+{
+  const sexo = prompt("Sexo (H/M):").toUpperCase()
+  const altura = Number(prompt("Altura:"))
+
+  if (sexo === "H") {
+    alert("Peso ideal: " + (72.7 * altura - 58))
+  } else if (sexo === "M") {
+    alert("Peso ideal: " + (62.1 * altura - 44.7))
+  } else {
+    alert("Valor inválido")
+  }
+}
+
+// ===============================
+// 10 - Par ou ímpar
+// ===============================
+{
+  const num = Number(prompt("Número:"))
+
+  if (num % 2 === 0) {
+    alert("Par")
+  } else {
+    alert("Ímpar")
+  }
+}
+
+# 📘 Notas - Estudos
+
+# ===============================
+# 01 - Configurando Ambiente
+# ===============================
+
+## CMD (Windows)
+
+```bash
+git config --global user.name "nome"
+git config --global user.email "email"
+
+SSH (Git Bash)
+Gerar nova chave SSH
+
+ssh-keygen -t ed25519 -C "email"
+
+Iniciar agente SSH
+
+eval "$(ssh-agent -s)"
+
+Adicionar chave ao agente
+
+ssh-add ~/.ssh/id_ed25519
+
+Copiar chave pública
+
+👉 Colar em: GitHub → Settings → SSH and GPG keys
+
+Testar conexão
+
+ssh -T git@github.com
+
+02 - Comandos Básicos
+Clonar repositório
+
+git clone <link-do-repositorio>
+
+Atualizar repositório
+
+git pull
+
+Linkar CSS
+<link type="text/css" rel="stylesheet" href="./css/tema.css">
+
+Linkar JavaScript
+<script src="./script.js"></script>
+
+03 - Fórmulas
+===============================
+Porcentagem
+valor * (1 + porcentagem / 100)
+===============================
+04 - DOM
+===============================
+Função + botão
+function exercicio1() {
+
+}
+
+const buttonexercicio1 = document.getElementById("exercicio1")
+
+buttonexercicio1.addEventListener("click", () => {
+  exercicio1()
+})
+Botão no HTML
+<button id="exercicio1">Executar Exercício 1</button>
