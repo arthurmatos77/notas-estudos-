@@ -1,8 +1,0 @@
-## titulo
-
-
-
-
-```bash
-const num = 
-```
