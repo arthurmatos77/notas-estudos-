@@ -7,4 +7,4 @@ function exercicio1 () {
 const batata = document.getElementById("exercicio")
 
 // addEventlistner
-batata.addEventListener('click', () => {exercicio1 () })
+batata.addEventListener('click', () => {exercicio1 () })  

@@ -47,14 +47,23 @@ Uso principal selecionar elementos unicos em uma pagina para manipulaçao ou lei
 const element = docment.getElementById('my-elemente');
 element.style.color = 'blue;
 
-createElement
+createElement 
+funçao   cria um novo elemento html
+uso principal  adicionar novos elementos a pagina dinamicamente
+
+const newDiv = document.createElement('div');
+newDiv.textContent = 'Hello, World!';
+document.body.appendChild(newDiv);
 
 const 
 
 
 click exemplo
-disparado 
-const button= document.getElementById('my-)
+disparado quando um elemento é clicado
+const button= document.getElementById('my-button');
+button.addEvenListener9('click', ()=> {
+    alert("Button was clicked);
+    )};
 
 
 
