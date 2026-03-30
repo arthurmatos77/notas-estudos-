@@ -331,3 +331,12 @@ buttonquestao5.addEventListener('click', () => { questao5() })
 
 
 
+react 
+biblioteca do js para construir interfaces 
+facilita criaçao de componentes reutilivazeis 
+usa uma abordagem declaritava para criar interfaces
+pq usar?
+componentizaçao : facilita a manuteçao e reutilizaçao de cod
+desempenho : virtual dom melhora a performance
+comunidade : grande suporte e muitas bibliotecas 
+
